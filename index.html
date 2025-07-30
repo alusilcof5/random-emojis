@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Random Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emoji Random Generator</h1>
+        <div class="emoji-display" id="emojiDisplay">
+            <div class="loading">Presiona "Nuevo Emoji" para comenzar</div>
+        </div>
+        <div class="emoji-info" id="emojiInfo" style="display: none;">
+            <strong>Nombre:</strong> <span id="emojiName"></span><br>
+            <strong>Categoría:</strong> <span id="emojiCategory"></span>
+        </div>
+        <div class="button-group">
+            <button onclick="getRandomEmoji()" id="randomBtn">🎲 Nuevo Emoji</button>
+            <button onclick="downloadEmoji()" id="downloadBtn" class="download-btn" disabled>💾 Descargar</button>
+        </div>
+        <div id="errorMessage" class="error" style="display: none;"></div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        © 2025 Ana Lucía Silva Córdova
+    </footer>
+    <script src="script.js"></script>
+</body> 
+</html>
